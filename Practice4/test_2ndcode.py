@@ -2,5 +2,5 @@ import pytest
 
 @pytest.mark.skip
 def test_1stcode():
-    assert 2==5
+    assert 2==2
     
