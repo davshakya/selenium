@@ -16,3 +16,6 @@ print(var1.is_enabled())
 # print(var2.is_selected())
 
 driver.close()
+
+
+
