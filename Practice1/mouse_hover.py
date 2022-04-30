@@ -12,7 +12,4 @@
 
 
 
-a="TCS"
-a="abc"
-print(a)
 
