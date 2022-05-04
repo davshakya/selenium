@@ -11,14 +11,10 @@ driver.maximize_window()
 # driver.find_element_by_xpath("//body/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]").click()
 driver.find_element_by_xpath("//button[@id='populate-text']").click()
 
-WebDriverWait(driver,15).until(expected_conditions.text_to_be_present_in_element((By.XPATH,"//h2[@id='h2']"),"Selenium Webdriver"))
+WebDriverWait(driver, 15).until(
+    expected_conditions.text_to_be_present_in_element((By.XPATH, "//h2[@id='h2']"), "Selenium Webdriver"))
 print(driver.find_element_by_xpath("//h2[@id='h2']").text)
-
 time.sleep(2)
 driver.close()
-
-
-
-
 
 
