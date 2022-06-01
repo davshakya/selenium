@@ -11,8 +11,6 @@ driver.maximize_window()
 d=driver.find_element_by_xpath("//input[@type="checkbox"]")
 for i in d:
     print(i)
-
-
 driver.close()
 
 

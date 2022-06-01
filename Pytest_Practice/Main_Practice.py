@@ -26,13 +26,12 @@ driver.maximize_window()
 # else:
 #     pass
 
-driver.find_element_by_xpath("//input[@id='name']").send_keys("Devendra")
-driver.find_element(By.XPATH, value="//input[@id='alertbtn']").click()
-popup = driver.switch_to_alert
-time.sleep(2)
-popup.di
-time.sleep(2)
-print(popup.text)
+# driver.find_element_by_xpath("//input[@id='name']").send_keys("Devendra")
+# driver.find_element_by_xpath("//input[@id='alertbtn']").click()
+# popup=driver.switch_to.alert
+# t=popup.text
+# print(t)
+# popup.dismiss()
 
 time.sleep(3)
 driver.close()
