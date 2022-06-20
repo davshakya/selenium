@@ -15,6 +15,7 @@ driver.maximize_window()
 
 static_dropdown = Select(driver.find_element_by_xpath("//select[@id='dropdown-class-example']"))
 static_dropdown.select_by_index(1)
+driver.execute_script("window.scrollTo(0, 1200)")
 
 # driver.find_element_by_xpath("/html[1]/body[1]/div[1]/div[2]/fieldset[1]/input[1]").send_keys("India")
 # time.sleep(5)    
@@ -34,4 +35,7 @@ static_dropdown.select_by_index(1)
 # popup.dismiss()
 
 time.sleep(3)
+driver.execute_script("window.scrollTo(0,0)")
+time.sleep(3)
+
 driver.close()
