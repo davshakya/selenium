@@ -72,7 +72,7 @@
 # j=0
 # for i in lt:
 #     j=i+j
-#     print(j)
+# print(j)
 
 # s=sorted(lt)
 # print(s)
@@ -275,7 +275,7 @@
 # l=[3,2,1]
 # for i in range(0,len(l)):
 #     for j in range(0,len(l)):
-            # l[i],l[j]=l[j],l[i] 
+#             l[i],l[j]=l[j],l[i] 
 #             print(l)
 
 # """""""Increase tuple""""       
@@ -421,14 +421,109 @@
 # # the result is a JSON string:
 # print(type(y),y)
 
-
 # print(ord("c"))
 # print(chr(99))
-
 
 # import sys
 # t=(1,2,3,4)
 # l=[1,2,3,4]
 # print(sys.getsizeof(t), sys.getsizeof(l))
+
+# l=["a","b","c","ddetr"]
+# print(l[-1][-1])
+
+# st="The kapil sharma show"
+# k=[]
+# str1=" "
+# for i in st.split():   
+#     k.append(i[::-1])
+# m=str1.join(k)
+# print(m,type(m))
+
+# rows = int(input("Enter number of rows: "))
+# number = 1
+# for i in range(1, rows+1):
+#     for j in range(1, i+1):
+#         print(number, end=" ")
+#         number += 1
+#     print()
+
+# s="devendraaaaa"
+# d={i:s.count(i) for i in s}
+# K= max(d, key= lambda x: d[x])
+# K2= min(d, key= lambda x: d[x])
+# print(K,d.get("a"))
+# # print(d.keys())
+
+# dd={"a":4,"b":5,"c":7}
+# print(list(dd.keys()))
+# print(list(dd.values()))
+# i=max(dd)
+# print(i,dd.get(i))
+
+# string="Devendra123"
+# for a in string:
+#     if (a.isnumeric()) == True:
+#         print(a)
+
+# import re 
+# s="de-vend_ra"
+# k=re.search("-(.*)_",s)
+# print(k.group(1))
+
+
+# a="devendra"
+# s=[]
+# for i in a:
+#     s.append(i)
+# k="".join(s)
+# print(k,type(k))
+
+
+# check_float = isinstance(25.9, float)
+# print(check_float)
+
+# check_int= isinstance(25.9, int)
+# print(check_int)
+
+
+# d={1:2,3:4,5:{11:12},7:8}
+# print(d[4][11])
+
+# print(l1)
+# print(l2)
+# k=[]
+# for i in l2:
+#     k.extend(list(i))
+# print(k)
+
+
+# d={1:2,3:4,5:{11:12},7:8}
+# for i in d.keys():
+#     k=d.get(i)
+#     print(k)
+#     for j in k:
+#         if j in k.get(j): 
+#             print("It is present")
+        
+        # k=d[i][j]
+        # if k==12:
+        #     print(d[i][j])
+        
+        
+# d={1:2,3:4,5:{11:12},7:8}
+# l1=list(d.keys())
+# l2=list(d.values())
+# k=[]
+# for i in l2:
+#         if isinstance(i,int):
+#                 k.append(i)
+#         if isinstance(i,dict):
+#                 l=k.append(list(i.values())[0])     
+# print(k)
+# if 12 in k:
+#         print("It is present")
+        
+        
 
 

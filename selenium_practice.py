@@ -5,6 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 import time
 
+
 driver = webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.maximize_window()
