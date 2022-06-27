@@ -12,7 +12,7 @@ def extract_store_sort(string):
     print(sorted(lst))
 string="AC*wv12n/:#e123we2.45oin  (fwoi6n#a98nfwb+owi"
 extract_store_sort(string)
- 
+
  
 
 
