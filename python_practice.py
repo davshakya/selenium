@@ -100,11 +100,17 @@
 # if s.count("is")>0:
 #     print("Yes")
 
+# from code import interact
+# from tkinter import Y
+
+# from pyparsing import java_style_comment
+
+
 # s="Gfg is best . Geeks are good and Geeks like Gfg"
 # for k in s.split():
 #     print(k,s.count(k),end=" ")
 
-# d={k:s.count(k) for k in s.split()}
+# d={k:s.count(k) for k in s()}
 # print(d)
 
 # st="devendra"
@@ -189,6 +195,18 @@
 #     y=z
 #     z=x+y
 #     print(z)
+    
+    
+# n=0
+# x=1
+# y=1
+# z=1
+# while n<10:
+#     x=y
+#     y=z
+#     z=x+y
+#     print(z)
+#     n=n+1
         
 # n=7
 # k=[]
@@ -387,18 +405,6 @@
 #     print("Hello")
 # abc()    
 
-# def deco(add):
-#     def inner():
-#         a=add()
-#         b=a+4
-#         print(b)
-#     return inner   
-# @deco
-# def add():
-#     a=56
-#     return a
-# add()
-
 
 # import json
 # # some JSON:
@@ -524,6 +530,217 @@
 # if 12 in k:
 #         print("It is present")
         
+     
+# j=int(input("Any element to find in dictionary "))       
+# d={1:2,3:4,5:{11:12},7:8}
+# l=list(d.values())
+# k=[]
+# for i in l:
+#         if isinstance(i,int):
+#                 k.append(i)
+#         if isinstance(i,dict):
+#                 l=k.append(list(i.values())[0])     
+# if j in k:
+#         print("It is present")   
+# else:
+#         print("It is not present")
+                        
         
+# d={1:2,3:4,5:{6:12},7:8}
+# if 12 in list(d.items()):               
+#         print("T")
+# else:
+#         print("N")
+        
+# def even_numbers(n):
+#         x=1
+#         y=1
+#         z=0
+#         for x in range(n):
+#                 x=y
+#                 y=z
+#                 z=x+y
+#                 yield z       
+# num = even_numbers(10)      
+# print(list(num))
+
+# def even_numbers(n):
+#         for x in range(n):
+#                 yield x       
+# num = even_numbers(10)      
+# print(list(num))
+
+# d={1:"a",2:"b",3:"c"}
+# val="c"
+# print(d.items())
+# for key, value in d.items():
+#         if val==value:
+#                 print(key)
+
+# def deco(add):
+#     def inner():
+#         a=add()
+#         b=a+4
+#         print(b)
+#     return inner   
+# @deco
+# def add():
+#     a=56
+#     return a
+# add()
+
+# class A:
+#         ad=40
+#         def add(slef):
+#            a=4+8
+#            print(a)     
+# class B(A):
+#         super().
+#         def add(slef):
+#            a=4+4
+#            print(a) 
+#         def sub(self):
+#                 super().add
+#                 # self.ad=30
+#                 a=self.ad-10
+#                 print(a)
+# obj=B()
+# obj.add()
+# obj.sub()
+
+
+# def my_function(x):
+#   return list(dict.fromkeys(x))
+# mylist = my_function(["a", "b", "a", "c", "c"])
+# print(mylist)
+
+# x=["a", "b", "a", "c", "c"]
+# y=list(dict.fromkeys(x))
+# print(y)
+
+# k=int(input("Enter any number to check weather it is duplicate or not "))
+# l1=[1,2,2,3,3]
+# if l1.count(k)>=2:
+#         print("Count= ",l1.count(k))
+# else:  
+#         print("No duplicate number found.")
+
+# l1=[1,2,3]
+# l2=[4,5,6]
+# d1={3:"a",1:"b",2:"c"}
+# d2={4:"d",5:"e",6:"f"}
+# d3={4:"u"}
+# # print(d1|d2)
+# # d1.update(d3)
+
+# print(sorted(d1.values()))# print(l1|l2)
+# dt={key:value for key,value in sorted(d1.items())}
+# print(dt)
+# print(dict(sorted(d1.items())))
+
+# d1.pop(1)
+# del d1[1]
+# print(d1)
+
+# class Vehicle:
+#         def abc(self,name):
+#                 print("Hellow Dev")
+# v=Vehicle()
+# print(type(v).__name__)
+
+# class A:
+#     i=30
+#     j=40
+#     def xyz(self):
+#         self.a=10
+#         self.b=20
+#         print("Hello A.xyz")
+#     def abc(self):
+#         print('Hello A.abc')
+#         sum=self.i+self.j
+#         print(sum)
+
+# class B(A):
+#     def abc(self):
+#         super().xyz()
+#         super().abc()
+#         c=self.a+self.b
+#         k=self.i+self.j   
+#         print(c,k) 
+# obj=B()
+# obj.abc()
+
+# def deco(add):
+#     def inner():
+#         a=add()
+#         b=a+4
+#         print(b)
+#     return inner   
+# # @deco
+# def add():
+#     a=56
+#     return a
+# add()
+
+# def lst():
+#         for i in range(10):
+#                 yield i
+# print(list(lst()))
+# # print(next(k))
+# # print(next(k))
+# # print(next(k))
+# # print(next(k))
+
+
+
+# class St_method:
+#         @staticmethod
+#         def add():
+#                 print("Hello Dev")
+# St_method.add()
+
+# from datetime import date
+# from datetime import datetime  
+# class Test: 
+#     def beg():  
+#         # print ("Welcome to the World!!")     
+#         print(date.today())
+#         print(datetime.now().time())
+# Test.beg()
+
+# Return the current date and time of the system   
+# Current_time = datetime.now().time()   
+# print("Current time is :", Current_time)
+
+#########two list into dictinary ##############
+# l1=["a","b","c","d"]
+# l2=[3,4,1,2]
+# print(l1+l2)
+# d=dict(zip(l1,l2))
+# print(d)
+# 
+# l3=[]
+# l4=[]
+# for key,value in d.items():
+#         l3.append(key)
+#         l4.append(value)
+# 
+# print(l3)
+# print(l4)
+
+# d2={'b': 1, 'c': 2, 'a': 3}
+# d={key:value for value,key in d2.items()}
+# print(d)
+# dl={key:value for key,value in sorted(d2.items())}
+# print(dl)
+
+# def perm(start, end=[]):
+#     if(len(start) == 0):
+#         print(end)
+#     else:
+#         for i in range(len(start)):
+#             perm(start[:i] + start[i+1:], end + start[i:i+1])
+# perm([1,2,3])
+
 
 
