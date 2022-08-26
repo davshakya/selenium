@@ -1,4 +1,3 @@
-
 # from sympy import factorial
 # print(factorial(5))
 
@@ -39,8 +38,6 @@
 #     print(z)
 
 
-
-
 # l=["abc",11,2,6,33,7,3,53,2,6,"xyz"]
 # lt=[11,2,6,33,7,3,53,2,6]
 # l[0],l[-1]=l[-1],l[0]
@@ -63,7 +60,7 @@
 # m1=[i for i in lt if i%2==0]
 # m2=[i for i in lt if i%2!=0]
 # print(m1,m2)
-    
+
 # l=["abc",11,2,6,33,7,3,53,2,6,"xyz"]
 # k=l.count(6)
 # print(k)
@@ -84,7 +81,7 @@
 #     print("It is pelindrome")
 # else: 
 #     print("not pelindrome")
-    
+
 # s="malayalam"
 # k=s.replace("m"," ",1)
 # st=s[:2]+s[3:]
@@ -195,8 +192,8 @@
 #     y=z
 #     z=x+y
 #     print(z)
-    
-    
+
+
 # n=0
 # x=1
 # y=1
@@ -207,7 +204,7 @@
 #     z=x+y
 #     print(z)
 #     n=n+1
-        
+
 # n=7
 # k=[]
 # for i in range(1,n+1):
@@ -230,7 +227,7 @@
 
 # for i in range(1,5):
 #     print(i*"*")
-    
+
 # n=20
 # s=20
 # j=0
@@ -262,21 +259,6 @@
 # print(k)
 # g=d.get("a")
 # print(g)
-
-# l=[2,9,4,78,5]
-# max=l[0]
-# for i in range(1,len(l)):
-#     if(l[i]>max):
-#         max=l[i]
-# print(max)
-
-# """""""""""""""""""""""""Sorting""""""""""""""""""""
-# l=[1,8,3,2,7,4]
-# for i in range(0,len(l)):
-#     for j in range(0,len(l)):
-#         if l[i]<l[j]:
-#             l[i],l[j]=l[j],l[i]      
-#             print(l)
 
 
 # import random
@@ -511,12 +493,12 @@
 #     for j in k:
 #         if j in k.get(j): 
 #             print("It is present")
-        
-        # k=d[i][j]
-        # if k==12:
-        #     print(d[i][j])
-        
-        
+
+# k=d[i][j]
+# if k==12:
+#     print(d[i][j])
+
+
 # d={1:2,3:4,5:{11:12},7:8}
 # l1=list(d.keys())
 # l2=list(d.values())
@@ -529,29 +511,14 @@
 # print(k)
 # if 12 in k:
 #         print("It is present")
-        
-     
-# j=int(input("Any element to find in dictionary "))       
-# d={1:2,3:4,5:{11:12},7:8}
-# l=list(d.values())
-# k=[]
-# for i in l:
-#         if isinstance(i,int):
-#                 k.append(i)
-#         if isinstance(i,dict):
-#                 l=k.append(list(i.values())[0])     
-# if j in k:
-#         print("It is present")   
-# else:
-#         print("It is not present")
-                        
-        
+
+
 # d={1:2,3:4,5:{6:12},7:8}
 # if 12 in list(d.items()):               
 #         print("T")
 # else:
 #         print("N")
-        
+
 # def even_numbers(n):
 #         x=1
 #         y=1
@@ -604,6 +571,7 @@
 #                 # self.ad=30
 #                 a=self.ad-10
 #                 print(a)
+
 # obj=B()
 # obj.add()
 # obj.sub()
@@ -692,7 +660,6 @@
 # # print(next(k))
 
 
-
 # class St_method:
 #         @staticmethod
 #         def add():
@@ -742,5 +709,88 @@
 #             perm(start[:i] + start[i+1:], end + start[i:i+1])
 # perm([1,2,3])
 
+""""Inbuilt function"""
 
+# d=abs(-12)
+# d=chr(98)
+# d=ord("d")
+# d=pow(2,3)
+# d=round(23.4)
+# d=divmod(5,3)
+# print(d)
+
+
+# """""""""""""""""""""""""Sorting""""""""""""""""""""
+# l=[3,1,2,4,5,7,89,43]
+# def sort(l):
+#     for i in range(len(l)):
+#         for j in range(i):
+#             if l[j]>l[i]:
+#                 l[i],l[j]=l[j],l[i]
+#     print(l)
+# sort(l)
+#
+# l=[888,2,3,7,45,22,9]
+# def max_value(l):
+#     m = l[0]
+#     for i in range(1,len(l)):
+#         if l[i]>m:
+#             m=l[i]
+#     print(m)
+# max_value(l)
+
+# j=int(input("Any element to find in dictionary "))
+# d={1:2,3:4,5:{11:12},7:8}
+# l=list(d.values())
+# print(list(d.keys()),list(d.keys()))
+# k=[]
+# for i in l:
+#         if isinstance(i,int):
+#                 k.append(i)
+#         if isinstance(i,dict):
+#                 l=k.append(list(i.values())[0])
+# if j in k:
+#         print("It is present")
+# else:
+#         print("It is not present")
+
+
+# def return_sum(l):
+#     even_sum = 0
+#     odd_sum = 0
+#     for i in l:
+#         if i % 2 == 0:
+#             even_sum = even_sum + i
+#         elif i % 2 != 0:
+#             odd_sum = odd_sum + i
+#     return [even_sum, odd_sum]
+# l = [23, 33, 45, 78, 56, 12, 46, 39, 80]
+# print(return_sum(l))
+
+# from functools import reduce
+#
+l = [3, 4, 5, 6, 1, 2]
+# x = list(map(lambda a: a * 2, l))
+# print(x)
+#
+# y = list(filter(lambda a: a > 2, l))
+# print(y)
+#
+# z = reduce(lambda a, b: a + b, l)
+# print(z)
+#
+# list_comp = [item * 2 for item in l]
+# print(list_comp)
+#
+# list_comp1 = [item * 2 for item in l]
+# print(list_comp)
+#
+dt = {"e": 3, "b": 5, "c": 9, "d": 6}
+x=sorted(dt.values())
+print(x)
+# d = {value: value ** 2 for value in l}
+# print(d)
+d = {key: value for key, value in sorted(dt.items())}
+print(d)
+print(d["e"])
 
