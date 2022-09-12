@@ -13,7 +13,7 @@ driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 
 
 # get all links
-all_links = driver.find_elements(By.CSS_SELECTOR, "a")
+all_links = driver.find_elements(By.TAG_NAME, "a")
 
 # check each link if it is broken or not
 for link in all_links:

@@ -250,6 +250,7 @@
 #     j=j+i**2
 # print(j)
 
+
 # d={"a":1,"b":3}
 # x=d["a"]
 # print(x)
@@ -265,6 +266,7 @@
 # import numpy as np
 # r=np.random.randint((1,6),3)
 # print(r)
+
 
 # import random
 # #Generate 5 random numbers between 10 and 30
@@ -739,6 +741,7 @@
 #     print(m)
 # max_value(l)
 
+
 # j=int(input("Any element to find in dictionary "))
 # d={1:2,3:4,5:{11:12},7:8}
 # l=list(d.values())
@@ -784,13 +787,18 @@ l = [3, 4, 5, 6, 1, 2]
 #
 # list_comp1 = [item * 2 for item in l]
 # print(list_comp)
-#
-dt = {"e": 3, "b": 5, "c": 9, "d": 6}
-x=sorted(dt.values())
-print(x)
-# d = {value: value ** 2 for value in l}
+# #
+# dt = {"e": 3, "b": 5, "c": 9, "d": 6}
+# x=sorted(dt.values())
+# print(x)
+# # d = {value: value ** 2 for value in l}
+# # print(d)
+# d = {key: value for key, value in sorted(dt.items())}
 # print(d)
-d = {key: value for key, value in sorted(dt.items())}
-print(d)
-print(d["e"])
+# print(d["e"])
 
+# l=lambda x,y:x+y
+
+x = ('apple', 'banana', 'cherry')
+y = enumerate(x)
+print(list(y))
