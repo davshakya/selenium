@@ -1,9 +1,9 @@
 import openpyxl
 
-# workbook=openpyxl.load_workbook("D:\\demo\\pytest_selenium_practice\\dev.xlsx")
-# sheet=workbook["Sheet1"]
-# a=sheet.cell(1,2).value
-# print(a)
+workbook=openpyxl.load_workbook("D:\\demo\\selenium\\pytest_selenium_practice\\dev.xlsx")
+sheet=workbook["Sheet"]
+a=sheet.cell(1,2).value
+print(a)
 #
 # workbook=openpyxl.Workbook()
 # sheet=workbook.active
@@ -123,13 +123,13 @@ import openpyxl
 #     print("ValueError exception came")
 # finally:
 #     print("finally block run always")
-
-
-a = "dev"
-b = "shakya"
-print(f"hello {a},{b}")
-
-try:
-    a = 3 / 0
-except:
-    print("invalid")
+#
+#
+# a = "dev"
+# b = "shakya"
+# print(f"hello {a},{b}")
+#
+# try:
+#     a = 3 / 0
+# except:
+#     print("invalid")

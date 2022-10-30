@@ -1,13 +1,19 @@
+import time
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
 
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.maximize_window()
+driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+driver.find_element(By.XPATH, "//input[@name='username']").send_keys("Admin")
+driver.find_element(By.XPATH, "//input[@name='password']").send_keys("admin123")
+driver.find_element(By.XPATH, "//button[@type='submit']").click()
+time.sleep(5)
+driver.close()
 
-#s=Service(path)
-#driver=webdriver.Chrome(service=s)
-driver.get('https://www.google.com')
-driver.find_element(By.NAME, 'q').send_keys('Yasser Khalil')
+
+
+

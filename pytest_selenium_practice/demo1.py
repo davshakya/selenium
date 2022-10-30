@@ -34,6 +34,7 @@ driver.maximize_window()
 #     url = link.get_attribute("href")
 #     print(url)
 # if validators.url(url):
+
 #     r = requests.head(url)
 #     rs_code = r.status_code
 #     # print(url,rs_code)
@@ -68,7 +69,6 @@ time.sleep(2)
 select_drop_down.select_by_visible_text("Option3")
 
 # driver.find_element_by_xpath("//input[@placeholder='Type to Select Countries']").send_keys("ind")
-# # from_countries = driver.find_elements_by_xpath("/html[1]/body[1]/ul[1]/li/div")
 # time.sleep(5)
 # from_countries = driver.find_elements_by_xpath("/html[1]/body[1]/ul[1]/li/div")
 # for country in from_countries:
@@ -88,7 +88,6 @@ select_drop_down.select_by_visible_text("Option3")
 # time.sleep(2)
 # print(popup.text)
 # popup.dismiss()
-
 
 # driver.find_element_by_xpath("//input[@id='file-upload']").send_keys("C:\\work\\abc.txt")
 # driver.find_element_by_xpath("//input[@id='file-submit']").click()

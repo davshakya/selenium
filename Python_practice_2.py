@@ -52,9 +52,49 @@
 # d={k:s.count(k) for k in s}
 # print(d)
 
-import random
-st="devendra"
-print(random.sample(st,2))
-print(random.randrange(1,20,3) )
-print(random.SystemRandom.randint(1,12))
+# import random
+#
+# st = "devendra"
+# print(random.sample(st, 2))
+# print(random.randrange(1, 20, 3))
+# print(random.SystemRandom.randint(1, 12))
 
+
+# import pandas as pd
+#
+# d = {"a": 4, "b": "Dev", "c": 5}
+#
+# df = pd.DataFrame(d)
+# print(df)
+#
+
+# import pandas as pd
+#
+#
+# data = {'name': ['nick', 'david', 'joe', 'ross'],
+#   'age': ['5', '10', '7', '6']}
+# new = pd.DataFrame.from_dict(data)
+#
+# print(new)
+
+import re
+
+st = "Devnedra123#$%^&#5678"
+
+# s=re.findall(r'\d',st)
+# print(s)
+
+# for i in st:
+#     # print(type(i))
+#
+#     try:
+#         print(eval(i))
+#     except:
+#         pass
+
+
+r=re.findall(r'[^\w\s]',st)
+# r=re.findall(r'[a-zA-Z]',st)
+# r=re.findall(r'\d{3}',st)
+
+print(r)
