@@ -18,9 +18,9 @@ driver.maximize_window()
 # static_dropdown.select_by_index(1)
 # driver.execute_script("window.scrollTo(0, 1200)")
 
-driver.find_element_by_xpath("//input[@placeholder='Type to Select Countries']").send_keys("India")
+driver.find_element(By.XPATH("//input[@placeholder='Type to Select Countries']")).send_keys("India")
 time.sleep(5)
-country = driver.find_elements_by_xpath("/html[1]/body[1]/ul[1]/li/div")
+country = driver.find_element(By.XPATH("/html[1]/body[1]/ul[1]/li/div"))
 print(country)
 # for i in country:
 #     print(i)
