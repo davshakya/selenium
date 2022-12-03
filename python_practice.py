@@ -359,14 +359,14 @@
 
 #     print("Invalid url")
 
-# Number = 123   
-# Reverse = 0    
-# while(Number > 0):    
-#     Reminder = Number %10   
-#     Reverse = (Reverse *10) + Reminder    
-#     Number = Number //10    
+# Number = 123
+# Reverse = 0
+# while(Number > 0):
+#     Reminder = Number %10
+#     Reverse = (Reverse *10) + Reminder
+#     Number = Number //10
 # print("\n Reverse of entered number is = %d" %Reverse)
-# print("Reverse of entered number is =",Reverse )
+# # print("Reverse of entered number is =",Reverse )
 
 # n=123
 # rev=0
@@ -742,16 +742,16 @@
 # max_value(l)
 
 
-# j=int(input("Any element to find in dictionary "))
-# d={1:2,3:4,5:{11:12},7:8}
-# l=list(d.values())
-# print(list(d.keys()),list(d.keys()))
-# k=[]
-# for i in l:
-#         if isinstance(i,int):
-#                 k.append(i)
-#         if isinstance(i,dict):
-#                 l=k.append(list(i.values())[0])
+j=int(input("Any element to find in dictionary "))
+d={1:2,3:4,5:{11:12},7:8}
+l=list(d.values())
+print(list(d.keys()),list(d.keys()))
+k=[]
+for i in l:
+        if isinstance(i,int):
+                k.append(i)
+        if isinstance(i,dict):
+                l=k.append(list(i.values())[0])
 # if j in k:
 #         print("It is present")
 # else:
@@ -771,7 +771,7 @@
 # print(return_sum(l))
 
 # from functools import reduce
-#
+#r
 l = [3, 4, 5, 6, 1, 2]
 # x = list(map(lambda a: a * 2, l))
 # print(x)
@@ -799,6 +799,6 @@ l = [3, 4, 5, 6, 1, 2]
 
 # l=lambda x,y:x+y
 
-x = ('apple', 'banana', 'cherry')
-y = enumerate(x)
-print(list(y))
+# x = ('apple', 'banana', 'cherry')
+# y = enumerate(x)
+# print(list(y))
