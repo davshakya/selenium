@@ -10,11 +10,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
-tab1 = driver.window_handles[0]
+# tab1 = driver.window_handles[0]
 driver.maximize_window()
 time.sleep(5)
 driver.find_element(By.XPATH, "//a[@id='opentab']").click()
-tab1 = driver.window_handles[1]
+# tab1 = driver.window_handles[1]
 time.sleep(5)
 for i in range(2):
     driver.switch_to.window(driver.window_handles[i])
@@ -23,6 +23,7 @@ for i in range(2):
         print(check_element)
         if check_element:
             print("Element found in window => ",i)
+            driver.close()
         else:
             print("Element not found")
     except:
