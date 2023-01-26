@@ -13,3 +13,7 @@ driver.find_element_by_xpath("//body/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/i
 
 # driver.implicitly_wait(5)
 driver.close()
+
+
+
+

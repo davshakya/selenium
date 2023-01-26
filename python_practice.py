@@ -387,7 +387,7 @@
 # @deco
 # def abc():
 #     print("Hello")
-# abc()    
+# abc()
 
 
 # import json
@@ -546,17 +546,17 @@
 #         if val==value:
 #                 print(key)
 
-# def deco(add):
-#     def inner():
-#         a=add()
-#         b=a+4
-#         print(b)
-#     return inner   
-# @deco
-# def add():
-#     a=56
-#     return a
-# add()
+def deco(add):
+    def inner():
+        a=add()
+        b=a+4
+        print(b)
+    return inner
+@deco
+def add():
+    a=56
+    return a
+add()
 
 # class A:
 #         ad=40
@@ -742,16 +742,16 @@
 # max_value(l)
 
 
-j=int(input("Any element to find in dictionary "))
-d={1:2,3:4,5:{11:12},7:8}
-l=list(d.values())
-print(list(d.keys()),list(d.keys()))
-k=[]
-for i in l:
-        if isinstance(i,int):
-                k.append(i)
-        if isinstance(i,dict):
-                l=k.append(list(i.values())[0])
+# j=int(input("Any element to find in dictionary "))
+# d={1:2,3:4,5:{11:12},7:8}
+# l=list(d.values())
+# print(list(d.keys()),list(d.keys()))
+# k=[]
+# for i in l:
+#         if isinstance(i,int):
+#                 k.append(i)
+#         if isinstance(i,dict):
+#                 l=k.append(list(i.values())[0])
 # if j in k:
 #         print("It is present")
 # else:
