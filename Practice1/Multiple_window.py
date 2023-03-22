@@ -1,6 +1,6 @@
 from selenium import webdriver
 import time
-driver = webdriver.Chrome(executable_path="chromedriver.exe")
+driver = webdriver.Chrome(executable_path="c:\work\chromedriver.exe")
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.maximize_window()
 driver.implicitly_wait(5)

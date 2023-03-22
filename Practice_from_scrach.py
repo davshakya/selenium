@@ -36,12 +36,12 @@
 
 ###########Sorting list#######
 
-# l = [4, 67, 7, 6, 1, 10, 90, 2, 9,12 ]
-# for i in range(len(l)):
-#     for j in range(i):
-#         if l[i]>l[j]:
-#             l[i],l[j]=l[j],l[i]
-# print(l)
+l = [4, 67, 7, 6, 1, 10, 90, 2, 9,12 ]
+for i in range(len(l)):
+    for j in range(i):
+        if l[i]>l[j]:
+            l[i],l[j]=l[j],l[i]
+print(l)
 
 ###########Factorial#######
 
