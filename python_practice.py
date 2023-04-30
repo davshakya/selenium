@@ -330,13 +330,7 @@
 # z=reduce(lambda a,b:a+b,l)
 # print(z)
 
-# """"""""""remove duplicate"""
-# l=[1,2,33,4,55,3,3,6,7,8,55,5,9,9,2]
-# k=[]
-# for i in l:
-#     if i not in k:
-#           k.append(i)
-# print(k)
+
 
 # l=[24,3,48,5,22,11]
 # m=l[0]
@@ -546,17 +540,17 @@
 #         if val==value:
 #                 print(key)
 
-def deco(add):
-    def inner():
-        a=add()
-        b=a+4
-        print(b)
-    return inner
-@deco
-def add():
-    a=56
-    return a
-add()
+# def deco(add):
+#     def inner():
+#         a=add()
+#         b=a+4
+#         print(b)
+#     return inner
+# @deco
+# def add():
+#     a=56
+#     return a
+# add()
 
 # class A:
 #         ad=40
@@ -693,7 +687,7 @@ add()
 # for key,value in d.items():
 #         l3.append(key)
 #         l4.append(value)
-# 
+
 # print(l3)
 # print(l4)
 
@@ -772,7 +766,7 @@ add()
 
 # from functools import reduce
 #r
-l = [3, 4, 5, 6, 1, 2]
+# l = [3, 4, 5, 6, 1, 2]
 # x = list(map(lambda a: a * 2, l))
 # print(x)
 #
@@ -802,3 +796,20 @@ l = [3, 4, 5, 6, 1, 2]
 # x = ('apple', 'banana', 'cherry')
 # y = enumerate(x)
 # print(list(y))
+
+
+# """"""""""remove duplicate"""
+# l=[1,2,33,4,55,3,3,6,7,8,55,5,9,9,2]
+# k=[]
+# for i in l:
+#     if i not in k:
+#           k.append(i)
+# print(k)
+
+st = "mamamakkskssll"
+k=""
+for i in st:
+    if i not in k:
+          k=k+i
+print(k)
+   

@@ -1,9 +1,8 @@
-import sympy.testing.runtests
 
-ls = [34, 25, 5, 6, 9, 12]
+# ls = [34, 25, 5, 6, 9, 12]
 # k=ls.copy()
 #
-ls1 = [3, 54, 2, 54, 44]
+# ls1 = [3, 54, 2, 54, 44]
 # l=[]
 # for i in range(1,len(ls)+1):
 #     l.append(ls[-i])
@@ -18,8 +17,8 @@ ls1 = [3, 54, 2, 54, 44]
 # print(ls)
 # print(k)
 # l=list(map(lambda x:x*x,ls))
-l1 = ["a", "b", "c"]
-l2 = ["x", "y", "z"]
+# l1 = ["a", "b", "c"]
+# l2 = ["x", "y", "z"]
 # rl=[]
 # for i in l1:
 #     for j in l2:
@@ -37,7 +36,7 @@ l2 = ["x", "y", "z"]
 # for i in zip(l1,l2):
 #     print(i)
 
-lt = ["Dev", "Sha", "*", "man"]
+# lt = ["Dev", "Sha", "*", "man"]
 # for i in lt:
 #     if not(len(i)==0):
 #         print(i)
@@ -56,24 +55,26 @@ lt = ["Dev", "Sha", "*", "man"]
 # print(s1[:m]+s2+s1[m:])
 
 s1 = "P@#yn26at^&i5ve"
-# #
-# num_count=0
-# alpha_count=0
-# symbol_count=0
 #
-# for i in s1:
-#   if i.isdigit():
-#      num_count=num_count+1
-#      print(i)
-#
-#   elif i.isalpha():
-#      alpha_count=alpha_count+1
-#   else:
-#      symbol_count=symbol_count+1
-#      print(i)
-# print("num_count :",num_count)
-# print("alpha_count :",alpha_count)
-# print("symbol_count :",symbol_count)
+num_count=0
+alpha_count=0
+symbol_count=0
+for i in s1:
+  if i.isdigit():
+     num_count=num_count+1
+  elif i.isalpha():
+     alpha_count=alpha_count+1
+  elif  not (i.isalpha()) and not (i.isdigit()):
+     symbol_count=symbol_count+1
+     print(i)
+  else:
+      pass
+
+     
+print(len(s1))
+print("num_count :",num_count)
+print("alpha_count :",alpha_count)
+print("symbol_count :",symbol_count)
 
 #
 # l=[42,4,424678,3]
@@ -81,8 +82,8 @@ s1 = "P@#yn26at^&i5ve"
 # # l.sort()
 # # print(l)
 # print(s1.lower())
-import re
-s1 = "P@#yn26at^&i5ve"
+# import re
+# s1 = "P@#yn26at^&i5ve"
 # x=re.findall(r'\d',s1)
 # x=re.findall(r'[\w]',s1)
 # x=re.findall(r'[\W]',s1)
@@ -90,8 +91,7 @@ s1 = "P@#yn26at^&i5ve"
 # x=re.findall(r'[a-zA-Z]',s1)
 # x=re.findall(r'[a-z]',s1)
 # x=re.findall(r'[A-Z]',s1)
-
 # print(x)
 # i=[int(j) for j in x]
 # print(sum(i))
-print(s1.join("-"))
+# print(s1.join("-"))

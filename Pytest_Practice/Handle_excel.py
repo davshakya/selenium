@@ -1,6 +1,6 @@
 import openpyxl
 #configure workbook path
-b = openpyxl.load_workbook("F:\\Computer_Programmes\\selenium\\Pytest_Practice\\data.xlsx")
+b = openpyxl.load_workbook("D:\\Dev_Progs\\selenium\\Pytest_Practice\\data.xlsx")
 #get active sheet
 sht = b.active
 #get cell address within active sheet

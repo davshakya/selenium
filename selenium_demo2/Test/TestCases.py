@@ -8,17 +8,17 @@ from Utilities.logger import Logclass
 @pytest.mark.usefixtures("setup")
 class TestUiPractice(Logclass):
     def test_set_text(self):
-        log=self.get_logs()
+        log = self.get_logs()
         hp = Home(self.driver)
         hp.input_text("Devendra Shakya")
         log.info("Entered user name")
         entered_text = self.driver.find_element(By.XPATH, hp.set_text).get_attribute("value")
         print("entered_text" + "=" + entered_text)
-        assert entered_text == "Devendra Shakya",log.info("#####Test case failed")
+        assert entered_text == "Devendra Shakya", log.info("#####Test case failed")
         log.info("test_set_text case passed")
 
     def test_checkboxes(self):
-        log=self.get_logs()
+        log = self.get_logs()
         hp = Home(self.driver)
         self.driver.find_element(By.XPATH, hp.checkbox1).click()
         self.driver.find_element(By.XPATH, hp.checkbox2).click()
@@ -28,7 +28,7 @@ class TestUiPractice(Logclass):
         log.info("test_checkboxes case passed")
 
     def test_switch_windows(self):
-        log=self.get_logs()
+        log = self.get_logs()
         hp = Home(self.driver)
         main = self.driver.window_handles[0]
         current_title = self.driver.title

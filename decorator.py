@@ -1,7 +1,6 @@
 def deco(add):
     def inner():
-        a=add()
-        b=a+4
+        b=add()+4
         print(b)
     return inner
 @deco
