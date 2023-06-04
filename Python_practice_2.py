@@ -81,8 +81,8 @@ import re
 
 st = "Devnedra123#$%^&#5678"
 
-# s=re.findall(r'\d',st)
-# print(s)
+s=re.findall(r'\d',st)
+print(s)
 
 # for i in st:
 #     # print(type(i))
@@ -97,4 +97,4 @@ r=re.findall(r'[^\w\s]',st)
 # r=re.findall(r'[a-zA-Z]',st)
 # r=re.findall(r'\d{3}',st)
 
-print(r)
+# print(r)

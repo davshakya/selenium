@@ -23,6 +23,4 @@ elif input_length==2:
         l1.append(l[i:i+2])
 else:
     pass
-
-
 print(l1)
