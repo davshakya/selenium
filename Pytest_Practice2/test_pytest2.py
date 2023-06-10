@@ -9,8 +9,8 @@ def test_login():
 def test_checkout():
     print("check into application")
 
+
 @pytest.mark.smoke    
 def test_logout():
     print("Logout from the application")
-    
     
