@@ -1,5 +1,4 @@
-import locale
-import re
+# import re
 
 # st = "Devnedr aeoi12. 3344#$%^&#5678"
 
@@ -278,13 +277,112 @@ import re
 
 
 ###Reverse line of text###########
-s="This my pen which is not your"
-sl=s.split()
-l=[]
-for i in sl:
-    k=""
-    for j in range(len(list(i))):
-        k=i[j]+k
-    l.append(k) 
-print(" ".join(l)) 
+# s="This my pen which is not your"
+# sl=s.split()
+# l=[]
+# for i in sl:
+#     k=""
+#     for j in range(len(list(i))):
+#         k=i[j]+k
+#     l.append(k) 
+# print(" ".join(l)) 
+
+
+
+# print('hi \
+#       frined')
+
+# print('hi \nfrined')
+
+# print(''' Hello
+#       firend''')
+
+# print('a\bgt')
+# print('a\\abc\g')
+# print('a\n\g')
+# print('atg\rg')
+# print('a\tb\g')
+# print('a\a\g')
+# print(ord("N"))
+# print(ord("1"))
+# print(hex(15))
+# print(oct(15))
+# print("Ram \u20b9 500")
+# print(ord("₹"))
+# print("Ram \u20B9 500")
+
+
+#######Refrence values #####
+
+# a=2,3
+# print(type(a))
+# a,b=3,4
+# print(a)
+# a=b=c=d=3
+# print(a)
+
+# a,*b,c=1,2,3,4,5,6,7,8,9,10,11,12,13
+# print(b)
+
+# a=[1,2,3]
+# c=a.copy()
+# c.append(4)
+# print(id(c),c)
+# print(id(a),a)
+# b=a
+# b.append(7)
+# print(id(b),b)
+
+# print("xyz".upper())
+
+
+
+# print(type(3))
+# print(isinstance(3,int))
+# print(isinstance('a',str))
+
+####Dynamic type python ####
+# a=2
+# print(type(a))
+# a="Hello"
+# print(type(a))
+
+######some_other_dataype##########
+# print(frozenset({1,2,3,4,4}))
+# print(type(range(0,5)))
+# print(b'Hello')
+# print(bytearray(5))
+# x=memoryview(bytes(5))
+# print(x)
+
+#####Type casting ####
+# print(complex(5))
+# print(int(5.3))
+# print(float(5))
+# print(type(str(123)))
+# print(bool(""))
+# print(bool("hello"))
+# print(bool(-12.1))
+# print(bool(0))
+
+###### f strings ####
+# a="Devendra"
+# z=f"Hello my name is {a}."
+# print(z)
+
+
+#### bytes to string ####
+# bt=(b'I LOVE INDIA')
+# print(bt)
+# st=str(bt, 'UTF8')
+# print(st)
+
+# print(40//10)
+# print(5%2)
+
+print(5-+-2)
+
+
+
+
 
