@@ -307,6 +307,7 @@
 # print(ord("1"))
 # print(hex(15))
 # print(oct(15))
+# print(bin(5))
 # print("Ram \u20b9 500")
 # print(ord("₹"))
 # print("Ram \u20B9 500")
@@ -380,7 +381,68 @@
 # print(40//10)
 # print(5%2)
 
-print(5-+-2)
+####Python Operator########
+import math
+# print(5-+-2)
+# a=44
+# b=5
+# c=a/b
+# i=a//b
+# print(c)
+# print(i)
+
+# x=2.6
+# print(math.floor(x))
+# print(math.ceil(x))
+
+# x=2.6
+# print(round(x))
+# z=2.2
+# print(round(z))
+# d=2.5
+# print(round(d))
+# print(2**3)
+# print("*"*3)
+# print(0/1)
+# print(3.4%3.2)
+# a="A"
+# b="a"
+# print(a==b)
+# print(a>b)
+# print(a<b)
+# print(True>False)
+# print(bool(""))
+# print(not(""))
+
+
+# Logical
+# j="" or ""
+# c= "" or "Hi"
+# a= "Hello" or ""
+# k="Hello" or "hi"
+# print(a)
+# l="" and ""
+# d= "hello" and "Hi"
+# s="Hello" and ""
+# e= "" and "Hi"
+
+#bitwise
+# print(s)
+# print(~9)
+# print(~-9)
+# print(1 & 0)
+# print(0 | 1)
+# print(3 & 8)
+# print(3 | 8)
+# print("hi" & "hello")
+# print("hi" | "hello")
+# print(3 ^ 7)
+# print(4<<2)
+# print(5>>2)
+# print(True & False)
+# print(True | False)
+
+
 
 
 
