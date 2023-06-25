@@ -443,6 +443,30 @@ import math
 # print(True | False)
 
 
+########## Function ############
+# import sys
+# print("x",sep='',end='\n',file=sys.stdout,flush=True)
+# print("a","b", sep="*",end='$')
+# print("a",file=sys.stdout)
+# print("a"     "b",sep="---")
+# print("a", "b",sep="---")
+# print("Hi"+"Hello")
+# print("Hi","Hello")
+# a=4
+# print("a=",a)
+# print(["Hi","Hello", 4],sep="*")
+# print(*["Hi","Hello", 4],sep="*")
+# print(*["Hi","Hello", 4])
+# print(["Hi","Hello", 4])
+
+file1=open("file1.txt","w")
+print("Hello This is Dev", file=file1)
+file1.close()
+
+
+
+
+
 
 
 
