@@ -459,12 +459,23 @@ import math
 # print(*["Hi","Hello", 4])
 # print(["Hi","Hello", 4])
 
-file1=open("file1.txt","w")
-print("Hello This is Dev", file=file1)
-file1.close()
+#### File handling with print function #######
+# file1=open("file1.txt","w")
+# print("Hello This is Dev", file=file1)
+# file1.close()
 
+##### Mysql ######
 
-
+# import mysql.connector as connector
+# mydb = connector.connect(host = "localhost", port=3306, user = "root", password = "tiger")  
+# if mydb.is_connected():                                  
+#     print("Connection Done")
+# else:
+#     print("Not Connected")
+# mycursor = mydb.cursor()
+# mycursor.execute("SHOW DATABASES")
+# for x in mycursor:
+#   print(x)
 
 
 
