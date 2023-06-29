@@ -120,11 +120,11 @@
 #     return a
 #
 #
-# import copy
-# #
+import copy
+#
 # old_list = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
 # new_list = copy.copy(old_list)
-#
+
 # old_list[1][1] = 'AA'
 # print("Old list:", old_list)
 # print("New list:", new_list)
@@ -132,7 +132,7 @@
 # #
 # old_list1 = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
 # new_list1 = copy.deepcopy(old_list1)
-#
+
 # old_list1[1][0] = 'BB'
 # print("Old list1:", old_list1)
 # print("New list1:", new_list1)
@@ -176,11 +176,12 @@
 #         print("*"*col)
 
 #
-# def creating_gen(index):
-#     months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
-#     yield months[index]
-#     yield months[index+2]
-# print(next(creating_gen(2)))
+def creating_gen(index):
+    months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+    yield months[index]
+    # yield months[index+2]
+print(next(creating_gen(2)))
+
 
 
 # s="deve"
@@ -476,10 +477,210 @@ import math
 # mycursor.execute("SHOW DATABASES")
 # for x in mycursor:
 #   print(x)
+# print(complex(3,5))
+# print(bool(2+3j))
+
+######## Number Conversion ######
+# a=2
+# b=31
+# c=324.230
+# print(f"a=%d b=%d" %(a,b))
+# print(f"a=%d"% a)
+# print(f"a=%d" %a)
+# print(f"a=%#x" %b)
+# print(f"a=%#o" %b)
+# print(f"a=%f" %c)
+# print(f"a=%g" %c)
+# print(f"a=%e" %c)
+
+##### Charector Conversion ##########
+# i='A'
+# print(f"i=%c"%i)
+# print(f"%c"%'\101')
+# print(f"%c"%'\x41')
+# print(f"%c"%'\u20b9')
+# print(f"%c"%'\U000020b9')
+
+###### String conversion #######
+# print(f"%s"%'Hello')
+# print(f"%r"%'Hello')
+# print(f"%a"%'Hello')
+
+###### Insertion of  Charector#######
+# print(f"%d%%"%12)
+
+#### Formating width specifier ######
+# %[flags][witdh][.precision]type
+# print(f"%f"%234)
+# print(26)
+# print(f"%-7d"%26)
+# print(f"%-7d"%2632)
+# print(f"%7d"%23316)
+# print(f"%7d"%232996)
+# print(f"%7s"%'*******')
+# print(f"%7s"%'*****')
+# print(f"%7c"%'*')
+
+#### Precision specifier ########
+# print(f"%.2f"%123.464456437)
+# print(f"%4.3f"%123.4676547)
+# print(f"%10.1f"%123.46
 
 
+####### Padding with Zero usinf flag(#,0,+,-,'') ######
+# print(f"%05d"%34)
+# print(f"%05d"%346)
+# print(f"%05d"%3481)
+
+# print(f"%-05d"%34)
+# print(f"%-05d"%346)
+# print(f"%-05d"%3481)
+
+# print(f"%+5g"%34)
+# print(f"%+5g"%346)
+# print(f"%+5g"%-3481)
+# print(f"%-5g"%-3481)
+# print(f"% g"%3481)
+# print(f"%g"%3481)
+
+###### F string in python #####
+# a=3
+# b=1
+# print(f"sum of {a} and {b} is equal to {a+b}")
+# a="Dev"
+# b="shakya"
+# print(f" Hello {a!r} and {b!r}")
+# print('hello {}'.format("dev"))
+# print("{0[name]:10} and {0[age]:10}".format({"name":"Dev", "age":36}))    
+# print("{0[name]:>10} and {0[age]:<10}".format({"name":"Dev", "age":36})) 
+
+######Ternary Operator #########
+# a=10
+# b=9
+# c=12
+# print(a if a>b else b)
+# print((a,b)[a>b])
+# print(("dev","shakya")[a>b])
+# print(("dev","shakya")[a<b])
+# print({True:"Yes",False:"No"}[a>b])
+# print((lambda a:a, lambda b:b)[a>b])
+# print("hello" if a>b else "hi" if a>c else "no")
 
 
+####### odd even #######
+# n=14
+# print("even" if n%2==0 else "odd" )
+
+##### Area of circle ######
+# import math
+# r=float(input("Enter the value of radius: "))
+# area_of_circle=math.pi*r**2
+# print("Area of circle is ",area_of_circle if r>0 else "Not allowed, Radius should be greater than 0")
+ 
+##########area of square ######
+# side=float(input("Enter the value of side:"))
+# if side>0:
+#     area=side*side
+#     print(f'Area of square is %.2f'% area)
+# else:
+#     print("Cannot find area")
 
 
+###### find the age #####
+# age=int(input("Enter the age of person:"))
+# if age>0 and age<100:
+#     print(f"Age of the persion is %d"%age)
+#     print(f"Age of the persion is {age}")
+# else :
+#     print("invalid age")
+ 
 
+####### problem 1####
+# n1=int(input())
+# n2=int(input())
+# n3=int(input())
+# if n1!=n2 and n2!=n3 and n3!=n1:
+#     print("1")
+# else:
+#     print("0")
+
+####### problem 2####
+# m,n =input().split()
+# m=int(m)
+# n=int(n)
+# if m%n==0:
+#     print(f'%d'%(m/n))
+# else:
+#     print("0")
+
+
+######## Loops ########
+
+
+"""It is indefinite loop"""
+# n=int(input("Enter any number:"))
+# i=1
+# while i<=n:
+#     print("Hello")
+#     i=i+1
+    
+######## Prime Number#######
+# n=int(input("Enter any number:"))
+# l=[]
+# i=1
+# while(i<=n):
+#     if n%i==0:
+#         l.append(i)
+#         print(i)
+#     i=i+1
+# if len(l)==2:
+#     print("It is prime number")
+# else:
+#     print("Not a prime number")
+
+
+# n=int(input("Enter any number:"))
+# flag=0
+# i=2
+# while(i<n):
+#     if n%i==0:
+#         flag=1
+#         break
+#     i=i+1
+# if flag==1:
+#     print("Not a prime number")
+# elif n==1:
+#     print("Not a prime number")
+# else:    
+#     print("It is prime number")        
+        
+        
+#### for loop #####
+# for a,b,c in [(1,2,3),(4,5,6), (7,8,9)]:
+#     print(a,b,c)
+
+# for a,*b,c in [(1,2,4,3),(4,5,5,6), (7,8,10,9)]:
+#     print(a,b,c)
+
+# for a in [(1,2,3),(4,5,6), (7,8,9)]:
+#     print(a)
+
+
+##### Iterable vs Iterator #########
+
+# s="Hello"
+# i=iter(s)
+# # print(type(i))
+# # k=list(i)
+# # print(str(i))
+# # t=tuple(i)
+# # print(k)
+# # print(t)
+
+# # print(next(i))
+# l=[1,2,3,3]
+# k=iter(l)
+# # print(next(k))
+# # print(next(k))
+# for i in k:
+#     print(i)
