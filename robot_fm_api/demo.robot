@@ -3,8 +3,6 @@ Library    RequestsLibrary
 Library    JSONLibrary
 Library    Collections
 Library    SeleniumLibrary
-Library    Process
-Library    Telnet
 Suite Setup         Start session
 Suite Teardown      Close Session
 
