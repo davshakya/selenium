@@ -84,11 +84,11 @@
 
 
 
-# s="devendra"
-# ss=[]
-# for i in list(s):
-#     ss=[x for x in ss if x<i]+[i]+[x for x in ss if x>=i]
-# print("".join(ss))
+s="devendra"
+ss=[]
+for i in list(s):
+    ss=[x for x in ss if x<i]+[i]+[x for x in ss if x>=i]
+print("".join(ss))
 
 
 # st="devendra"
