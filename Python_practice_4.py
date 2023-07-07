@@ -161,15 +161,17 @@ for i in k:
 # print(''.join(list(reversed(s))))
 
 
-s="devendra"
-dup=[]
-unique=[]
-for i in s:
-    if i not in unique:
-         unique.append(i)
-    else:
-        dup.append(i)
-print(dup)
+# s="devendra"
+# dup=[]
+# unique=[]
+# for i in s:
+#     if i not in unique:
+#          unique.append(i)
+#     else:
+#         dup.append(i)
+# print(dup)
+
+
 
 
 

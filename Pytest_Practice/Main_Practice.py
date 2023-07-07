@@ -35,3 +35,6 @@ static_dropdown.select_by_index(1)
 
 time.sleep(3)
 driver.close()
+
+
+

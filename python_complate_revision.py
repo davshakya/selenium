@@ -84,11 +84,11 @@
 
 
 
-s="devendra"
-ss=[]
-for i in list(s):
-    ss=[x for x in ss if x<i]+[i]+[x for x in ss if x>=i]
-print("".join(ss))
+# s="devendra"
+# ss=[]
+# for i in list(s):
+#     ss=[x for x in ss if x<i]+[i]+[x for x in ss if x>=i]
+# print("".join(ss))
 
 
 # st="devendra"
@@ -176,11 +176,11 @@ import copy
 #         print("*"*col)
 
 #
-def creating_gen(index):
-    months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
-    yield months[index]
-    # yield months[index+2]
-print(next(creating_gen(2)))
+# def creating_gen(index):
+#     months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+#     yield months[index]
+#     # yield months[index+2]
+# print(next(creating_gen(2)))
 
 
 

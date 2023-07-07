@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230630 06:47:31.151" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo" source="D:\Dev_Progs\selenium\robot_fm_api\demo.robot">
-<kw name="Start session" type="SETUP">
-<kw name="Create Session" library="RequestsLibrary">
-<arg>mysession</arg>
-<arg>https://reqres.in</arg>
-<arg>verify=true</arg>
-<doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20230630 06:47:31.793" level="INFO">Creating Session using : alias=mysession, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20230630 06:47:31.793" endtime="20230630 06:47:31.793"/>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230630 09:32:49.225" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Demo" source="D:\Dev_Progs\selenium\robot_selenium\test_demo.robot">
+<test id="s1-t1" name="Initialise chrome browser" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230630 09:32:49.424" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg timestamp="20230630 09:32:52.635" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230630 09:32:52.635" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 102
+Current browser version is 114.0.5735.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003ED953+2414931]
+	Ordinal0 [0x0037F5E1+1963489]
+	Ordinal0 [0x0026C6B8+837304]
+	Ordinal0 [0x0028CAE3+969443]
+	Ordinal0 [0x002886FA+952058]
+	Ordinal0 [0x00285FB1+942001]
+	Ordinal0 [0x002B9100+1151232]
+	Ordinal0 [0x002B8D5A+1150298]
+	Ordinal0 [0x002B42B6+1131190]
+	Ordinal0 [0x0028E860+976992]
+	Ordinal0 [0x0028F756+980822]
+	GetHandleVerifier [0x0065CC62+2510274]
+	GetHandleVerifier [0x0064F760+2455744]
+	GetHandleVerifier [0x0047EABA+551962]
+	GetHandleVerifier [0x0047D916+547446]
+	Ordinal0 [0x00385F3B+1990459]
+	Ordinal0 [0x0038A898+2009240]
+	Ordinal0 [0x0038A985+2009477]
+	Ordinal0 [0x00393AD1+2046673]
+	BaseThreadInitThunk [0x75DB7D59+25]
+	RtlInitializeExceptionChain [0x774CB79B+107]
+	RtlClearBits [0x774CB71F+191]
+</msg>
+<status status="FAIL" starttime="20230630 09:32:49.424" endtime="20230630 09:32:52.635"/>
 </kw>
-<status status="PASS" starttime="20230630 06:47:31.793" endtime="20230630 06:47:31.793"/>
-</kw>
-<test id="s1-t1" name="Do get request and validate data" line="27">
-<kw name="Get On Session" library="RequestsLibrary">
-<var>${response}</var>
-<arg>mysession</arg>
-<arg>${uri_demo}</arg>
-<doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20230630 06:47:32.012" level="INFO">GET Request : url=https://reqres.in/api/users 
- path_url=/api/users 
- headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg timestamp="20230630 06:47:32.012" level="INFO">GET Response : url=https://reqres.in/api/users 
- status=200, reason=OK 
- headers={'Date': 'Fri, 30 Jun 2023 01:17:32 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '148', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dBiicDW8HIQqZqU0GFxRCg0TS6pGdAvy8IAyYh%2Bf1To0pqfDR1XgFw3ZmludzKt7LRfW2Am%2F0ha%2BtfCbbTIFIEVojA2fNdaKaEvu7OvDwTmZ2aTGBCl0Hk2Khg%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '7df291f8d93af45e-BOM', 'Content-Encoding': 'gzip'} 
- body={"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}} 
- </msg>
-<msg timestamp="20230630 06:47:32.012" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230630 06:47:31.793" endtime="20230630 06:47:32.012"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>&gt;&gt; ${response.json()}[data][0][email]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230630 06:47:32.012" endtime="20230630 06:47:32.012"/>
-</kw>
-<kw name="Get Value From Json" library="JSONLibrary">
-<var>${id}</var>
-<arg>${response.json()}</arg>
-<arg>data[0][email]</arg>
-<doc>Get Value From JSON using JSONPath</doc>
-<msg timestamp="20230630 06:47:32.074" level="INFO">${id} = ['george.bluth@reqres.in']</msg>
-<status status="PASS" starttime="20230630 06:47:32.012" endtime="20230630 06:47:32.074"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>&gt;&gt; ${id}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230630 06:47:32.074" endtime="20230630 06:47:32.074"/>
-</kw>
-<kw name="Status Should Be" library="RequestsLibrary">
-<arg>200</arg>
-<arg>${response}</arg>
-<doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20230630 06:47:32.074" endtime="20230630 06:47:32.074"/>
-</kw>
-<status status="PASS" starttime="20230630 06:47:31.793" endtime="20230630 06:47:32.074"/>
+<status status="FAIL" starttime="20230630 09:32:49.424" endtime="20230630 09:32:52.635">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 102
+Current browser version is 114.0.5735.199 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003ED953+2414931]
+	Ordinal0 [0x0037F5E1+1963489]
+	Ordinal0 [0x0026C6B8+837304]
+	Ordinal0 [0x0028CAE3+969443]
+	Ordinal0 [0x002886FA+952058]
+	Ordinal0 [0x00285FB1+942001]
+	Ordinal0 [0x002B9100+1151232]
+	Ordinal0 [0x002B8D5A+1150298]
+	Ordinal0 [0x002B42B6+1131190]
+	Ordinal0 [0x0028E860+976992]
+	Ordinal0 [0x0028F756+980822]
+	GetHandleVerifier [0x0065CC62+2510274]
+	GetHandleVerifier [0x0064F760+2455744]
+	GetHandleVerifier [0x0047EABA+551962]
+	GetHandleVerifier [0x0047D916+547446]
+	Ordinal0 [0x00385F3B+1990459]
+	Ordinal0 [0x0038A898+2009240]
+	Ordinal0 [0x0038A985+2009477]
+	Ordinal0 [0x00393AD1+2046673]
+	BaseThreadInitThunk [0x75DB7D59+25]
+	RtlInitializeExceptionChain [0x774CB79B+107]
+	RtlClearBits [0x774CB71F+191]
+</status>
 </test>
-<kw name="Close Session" type="TEARDOWN">
-<kw name="Delete All Sessions" library="RequestsLibrary">
-<doc>Removes all the session objects</doc>
-<msg timestamp="20230630 06:47:32.074" level="INFO">Deleting All Sessions</msg>
-<status status="PASS" starttime="20230630 06:47:32.074" endtime="20230630 06:47:32.074"/>
-</kw>
-<status status="PASS" starttime="20230630 06:47:32.074" endtime="20230630 06:47:32.074"/>
-</kw>
-<status status="PASS" starttime="20230630 06:47:31.151" endtime="20230630 06:47:32.074"/>
+<status status="FAIL" starttime="20230630 09:32:49.225" endtime="20230630 09:32:52.635"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Demo">Test Demo</stat>
 </suite>
 </statistics>
 <errors>
