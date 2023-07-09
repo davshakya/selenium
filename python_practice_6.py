@@ -54,4 +54,7 @@
  
 s='devendra shakya'
 print(s.split())
- 
+
+
+
+
