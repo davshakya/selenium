@@ -1,6 +1,12 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import time
-driver = webdriver.Chrome(executable_path="chromedriver.exe")
+
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://chercher.tech/practice/implicit-wait-example")
 driver.maximize_window()
 driver.implicitly_wait(30)

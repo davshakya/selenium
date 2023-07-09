@@ -625,19 +625,6 @@ import math
 #     i=i+1
     
 ######## Prime Number#######
-# n=int(input("Enter any number:"))
-# l=[]
-# i=1
-# while(i<=n):
-#     if n%i==0:
-#         l.append(i)
-#         print(i)
-#     i=i+1
-# if len(l)==2:
-#     print("It is prime number")
-# else:
-#     print("Not a prime number")
-
 
 # n=int(input("Enter any number:"))
 # flag=0

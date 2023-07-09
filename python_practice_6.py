@@ -51,9 +51,40 @@
 #         max[0]=l[i] 
 # print(max[0])  
 
- 
-s='devendra shakya'
-print(s.split())
+
+# import time
+# start1=time.time()
+# n=13123456
+# l=[]
+# i=1
+# while(i<=n):
+#     if n%i==0:
+#         l.append(i)
+#     i=i+1
+# if len(l)==2:
+#     print("It is prime number")
+# else:
+#     print("Not a prime number")
+# print("With list==",time.time()-start1)     
+
+
+# start2=time.time()
+# flag=0
+# i=2
+# while(i<n):
+#     if n%i==0:
+#         flag=1
+#         break
+#     i=i+1
+# if flag==1:
+#     print("Not a prime number")
+# elif n==1:
+#     print("Not a prime number")
+# else:    
+#     print("It is prime number")   
+    
+# print("without list",time.time()-start2)     
+        
 
 
 
