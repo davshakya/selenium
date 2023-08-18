@@ -10,6 +10,8 @@ from selenium.webdriver.support.select import Select
 import time
 
 driver = webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.maximize_window()
 
