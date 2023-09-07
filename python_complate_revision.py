@@ -671,3 +671,12 @@ import math
 # # print(next(k))
 # for i in k:
 #     print(i)
+
+# name="devendrashakya"
+# dt={}
+# for i in name:
+#     if i in dt:
+#         dt[i]=dt[i]+1
+#     else:
+#         dt[i]=1
+# print(dt)

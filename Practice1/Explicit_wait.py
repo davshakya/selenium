@@ -18,6 +18,8 @@ driver.find_element(By.XPATH,"//button[@id='populate-text']").click()
 WebDriverWait(driver, 15).until(expected_conditions.text_to_be_present_in_element((By.XPATH, "//h2[@id='h2']"), "Selenium Webdriver"))
 print(driver.find_element(By.XPATH,"//h2[@id='h2']").text)
 time.sleep(2)
+
+# WebDriverWait(driver,10).untill(expected_conditions.element_located_to_be_selected((By.xpath,"//xpath")))
 driver.close()
 
 

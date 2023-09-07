@@ -87,5 +87,76 @@
         
 
 
+# num=123
+# rev=0
+# while num>0:
+#     rem = num%10
+#     rev=rev*10+rem
+#     num=num//10
+# print(rev)
+
+
+# n=10
+# x=0
+# y=1
+# for i in range(n):
+#     z=x+y
+#     x=y
+#     y=z
+#     print(z)
+
+# l=[24,35,1,114,22,5]
+# for i in range(len(l)):
+#     for j in range(i):
+#         if l[i]<l[j]:
+#             l[i],l[j]=l[j],l[i]
+# print(l)  
+
+# l=[24,35,1,114,22,5]
+# max=[l[0]]
+# for i in range(len(l)):
+#     if l[i]<max[0]:
+#         max[0]=l[i]
+# print(max[0])
+
+# d={"z":5}
+
+# l=["a","b","c"]
+# l2=[1,2,3]
+# for i in range(len(l)):
+#     d[l[i]]=l2[i]
+# print(d)
+
+# d3={"x":4,"y":8}
+# # d.update(d3)
+# print(d3.get("x"))
+# # print(3)
+
+
+# x=5
+# print(isinstance(x,int))
+    
+# s="Devnedra"
+# d=s.lower()
+# dd=""
+# for i in d:
+#     if i not in dd:
+#         dd=dd+i 
+# print(dd)
+
+# c=1
+# k=5
+# for i in range(5):
+#     for j in range(1,k-i):
+#         print(c,end=" ")
+#         c=c+1
+#     print("\n")    
+
+import re
+s="devendr12347890#$%^"
+x=re.findall("\W",s)
+print(x)
+
+
 
 
