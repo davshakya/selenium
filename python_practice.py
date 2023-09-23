@@ -806,10 +806,17 @@
 #           k.append(i)
 # print(k)
 
-st = "mamamakkskssll"
-k=""
-for i in st:
-    if i not in k:
-          k=k+i
-print(k)
-   
+# st = "mamamakkskssll"
+# k=""
+# for i in st:
+#     if i not in k:
+#           k=k+i
+# print(k)
+
+k=5
+m=1
+for i in range(1,5):
+    for j in range(k-i):
+        print(m,end=" ")
+        m=m+1
+    print("\n")
