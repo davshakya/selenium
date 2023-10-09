@@ -1,17 +1,21 @@
-# from selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-# driver=webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
-# driver.get("https://opensource-demo.orangehrmlive.com/")
-# driver.find_element_by_xpath("//div[@id='divUsername']/input").send_keys("Admin")
-# driver.find_element_by_xpath("//div[@id='divPassword']/input").send_keys("admin123")
-# driver.find_element_by_xpath("//input[@type='submit']").click()
-# x=driver.find_element_by_xpath("//a[@id='menu_dashboard_index']/b").get_attribute()
-# print(x)
-# driver.quit()
+driver=webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
+driver.get("https://opensource-demo.orangehrmlive.com/")
+driver.find_element_by_xpath("//div[@id='divUsername']/input").send_keys("Admin")
+driver.find_element_by_xpath("//div[@id='divPassword']/input").send_keys("admin123")
+driver.find_element_by_xpath("//input[@type='submit']").click()
+x=driver.find_element_by_xpath("//a[@id='menu_dashboard_index']/b").get_attribute()
+print(x)
+
+
+
+
+driver.quit()
 
 
 

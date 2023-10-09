@@ -51,10 +51,11 @@ for i,j in zip(sheet1,sheet2):
   b.append(y)
   a.sort()
   b.sort()
-for m,n in zip(range(len(a)),range(len(b))):
-  if a[m]==b[n]:
-      print(f"equal {a[m]},{b[n]}")
-  else:
+  for m,n in zip(range(len(a)),range(len(b))):
+   if a[m]==b[n]:
+    #   print(f"equal {a[m]},{b[n]}")
+    pass
+   else:
       print(f"not equal {a[m]},{b[n]}")
 
 # print(a)

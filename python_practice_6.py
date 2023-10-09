@@ -152,10 +152,10 @@
 #         c=c+1
 #     print("\n")    
 
-import re
-s="devendr12347890#$%^"
-x=re.findall("\W",s)
-print(x)
+# import re
+# s="devendr12347890#$%^"
+# x=re.findall("\W",s)
+# print(x)
 
 
 

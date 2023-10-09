@@ -13,7 +13,8 @@ import validators
 import requests
 from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome()
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 # # driver.get("https://the-internet.herokuapp.com/upload")
 # driver.get("https://chercher.tech/practice/implicit-wait-example")
