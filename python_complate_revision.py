@@ -672,11 +672,15 @@ import math
 # for i in k:
 #     print(i)
 
-name="devendrashakya"
-dt={}
-for i in name:
-    if i in dt:
-        dt[i]=dt[i]+1
-    else:
-        dt[i]=1
-print(dt)
+# name="devendrashakya"
+# dt={}
+# for i in name:
+#     if i in dt:
+#         dt[i]=dt[i]+1
+#     else:
+#         dt[i]=1
+# print(dt)
+
+
+x=range(1,10)
+print(type(x))

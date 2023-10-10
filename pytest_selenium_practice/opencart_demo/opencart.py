@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-driver = webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
+driver = webdriver.Chrome("C:\work\chromedriver.exe")
 driver.get("http://localhost/opencart/upload/")
 driver.maximize_window()
 driver.find_element(By.XPATH, "//span[normalize-space()='My Account']").click()
