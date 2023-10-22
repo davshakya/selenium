@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.select import Select
 
 
-driver=webdriver.Chrome(executable_path="chromedriver.exe")
+driver=webdriver.Chrome(executable_path="c:/work/chromedriver.exe")
 driver.get('https://www.salesforce.com/in/form/signup/freetrial-sales/?d=70130000000Enyk')  
 driver.maximize_window()
 obj=driver.find_element_by_name("UserTitle")
@@ -18,8 +18,5 @@ print(len(p1))
 for element in range(len(p1)):
     if p1[element].is_displayed():
         print(p1[element].text)
-       
 driver.close()
- 
- 
  

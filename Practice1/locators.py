@@ -8,7 +8,7 @@ import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome(executable_path="chromedriver.exe")
+driver = webdriver.Chrome()
 driver.get('https://rahulshettyacademy.com/AutomationPractice/')
 driver.maximize_window()
 # print(driver.title)
@@ -60,7 +60,7 @@ alert = driver.switch_to_alert()
 print(alert.text)
 assert "Devendra" in alert.text
 alert.dismiss()
-
+driver.execute_script("return document.URL")
 
 time.sleep(1)
 driver.close()
