@@ -22,7 +22,8 @@ import numpy as np
 
 ##read csv file
 dt=pd.read_csv("D:\Dev_Progs\selenium\Book1.csv")
-# s=dt.squeeze("index")
+s=dt.squeeze("index")
+# print(s)
 # print(dt.head(3))
 # print(dt.tail(3))
 # print(dt.tail(3))
