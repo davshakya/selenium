@@ -70,26 +70,54 @@ import time
 
 ######################################
   
-def checkdatatype(datatype):
-    def wrpapper1(func):
-        def wrapper2(*args):
-            if type(args[0])==datatype:
-                func(*args)
-            else:
-                raise   TypeError("ye datatype sahi nai hai")
-        return wrapper2
-    return  wrpapper1
+# def checkdatatype(datatype):
+#     def wrpapper1(func):
+#         def wrapper2(*args):
+#             if type(args[0])==datatype:
+#                 func(*args)
+#             else:
+#                 raise   TypeError("ye datatype sahi nai hai")
+#         return wrapper2
+#     return  wrpapper1
     
-@checkdatatype(int)
-def sanitycheck(n):
-    print(n**2)
-sanitycheck(3)
+# @checkdatatype(int)
+# def sanitycheck(n):
+#     print(n**2)
+# sanitycheck(3)
 
 
+###################################
 
+# def deco_test(limit):
+#     def outer(normal_fun):
+#         def inner(*args):
+#             if args[0]>=limit:
+#                 normal_fun(*args)
+#             else:
+#                 print("Enter value greater than",limit)
+#         return inner
+#     return  outer
 
+# @deco_test(7)
+# def normal_fun(n):
+#     print(n**2)
+# normal_fun(9)        
 
+    
+#######################
 
+def deco(func):
+    def inner():
+        x=func()
+        x=x+5
+        print(x)
+    return inner
+
+@deco
+def func():
+    return 8
+func()
+    
     
 
    
