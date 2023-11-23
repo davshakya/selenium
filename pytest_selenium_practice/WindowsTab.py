@@ -1,6 +1,7 @@
 import time
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -16,8 +17,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def Test_HandingW():
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    # driver=webdriver.Chrome(executable_path="chromedriver.exe")
+    driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
+    # driver=webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
     driver.get("https://rahulshettyacademy.com/AutomationPractice/")
     tab1 = driver.window_handles[0]
     time.sleep(5)

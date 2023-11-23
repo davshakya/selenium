@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -8,7 +9,7 @@ import time
 
 import requests
 
-driver = webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
+driver = webdriver.Chrome("C:\work\chromedriver.exe")
 
 
 # provide website url here

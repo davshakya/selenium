@@ -160,3 +160,42 @@
 
 
 
+# s="devendra"
+# k=""
+# for i in s:
+#     k=i+k
+# print(k)
+
+# num=123
+# rev=0
+# while num>0:
+#     rem=num%10
+#     rev=rem*10+rev
+#     num=num//10
+# print(rev)
+
+
+# s="devendra singh shakya"
+# rev=""
+# for j in s.split():
+#     k=""
+#     for i in j:
+#         k=i+k
+#     rev=rev+ " " + k  
+# print(rev)
+
+# k=5
+# m=1
+# for i in range(6):
+#     print(k*f"{m}"+i*' ')
+#     k=k-1
+#     m=m+1
+    
+    
+k=6
+m=1
+for i in range(1,5):
+    for j in range(1,k-i):
+        print(m,end=" ")
+        m=m+1
+    print("\n")

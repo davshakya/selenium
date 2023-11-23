@@ -2,20 +2,12 @@ import json
 
 import requests
 
-url = "https://reqres.in/api/users?page=2"
+url = "https://cdn.jsdelivr.net/npm/primeng@9.0.5/resources/themes/nova-light/fonts/open-sans-v15-latin-regular.woff2"
 
-r = requests.get(url)
-# r_json = r.text
-# r_json = r.content
-r_dict = r.json()
-r_headers=r.headers
-r_sc=r.status_code
+response = requests.get(url)
+# print(response)
+response_json=response.json
+print(response_json)
 
-
-print(r_sc)
-print(r_headers)
-r_json =json.dumps(r_dict)
-print(type(r_json))
-print(type(r_dict))
-
-
+# r_sc=response.status_code
+# print(r_sc)

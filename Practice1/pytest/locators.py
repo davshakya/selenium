@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -7,7 +8,7 @@ import time
 
 from selenium.webdriver.support.select import Select
 
-driver = webdriver.Chrome(executable_path="chromedriver.exe")
+driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
 driver.get('https://rahulshettyacademy.com/AutomationPractice/')
 driver.maximize_window()
 # print(driver.title)

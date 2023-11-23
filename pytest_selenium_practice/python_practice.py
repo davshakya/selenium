@@ -682,10 +682,10 @@
 #########two list into dictinary ##############
 # l1=["a","b","c","d"]
 # l2=[3,4,1,2]
-# print(l1+l2)
+# # print(l1+l2)
 # d=dict(zip(l1,l2))
 # print(d)
-# 
+# # 
 # l3=[]
 # l4=[]
 # for key,value in d.items():
@@ -696,6 +696,10 @@
 # print(l4)
 
 # d2={'b': 1, 'c': 2, 'a': 3}
+# print(d2.values())
+# lt=[i for i in d2.values()]
+# print(lt)
+
 # d={key:value for value,key in d2.items()}
 # print(d)
 # dl={key:value for key,value in sorted(d2.items())}
@@ -770,6 +774,8 @@
 # from functools import reduce
 #
 l = [3, 4, 5, 6, 1, 2]
+# l.reverse()
+# print(l)
 # x = list(map(lambda a: a * 2, l))
 # print(x)
 #
@@ -785,12 +791,24 @@ l = [3, 4, 5, 6, 1, 2]
 # list_comp1 = [item * 2 for item in l]
 # print(list_comp)
 #
-dt = {"e": 3, "b": 5, "c": 9, "d": 6}
-x=sorted(dt.values())
-print(x)
+# dt = {"e": 3, "b": 5, "c": 9, "d": 6}
+# x=sorted(dt.values())
+# print(x)
 # d = {value: value ** 2 for value in l}
 # print(d)
-d = {key: value for key, value in sorted(dt.items())}
-print(d)
-print(d["e"])
+# d = {key: value for key, value in sorted(dt.items())}
+# print(d)
+# print(d["e"])
 
+# importing copy module
+import copy
+
+# initializing list 1
+li1 = [1, 2, [3, 5], 4]
+print("li1 ID: ", id(li1), "Value: ", li1)
+# using copy for shallow copy
+li2 = copy.copy(li1)
+print("li2 ID: ", id(li2), "Value: ", li2)
+# using deepcopy for deepcopy
+li3 = copy.deepcopy(li1)
+print("li3 ID: ", id(li3), "Value: ", li3)

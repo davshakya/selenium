@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -11,7 +12,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-driver=webdriver.Chrome(executable_path="chromedriver.exe")
+driver=webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
 # driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.get("https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver")
 

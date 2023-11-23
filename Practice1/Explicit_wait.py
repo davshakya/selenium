@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -8,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
 driver.get("https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver")
 driver.maximize_window()
 WebDriverWait(driver,11).until(expected_conditions.element_to_be_clickable((By.XPATH,"//body/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]")))

@@ -799,12 +799,12 @@
 
 
 # """"""""""remove duplicate"""
-# l=[1,2,33,4,55,3,3,6,7,8,55,5,9,9,2]
-# k=[]
-# for i in l:
-#     if i not in k:
-#           k.append(i)
-# print(k)
+l=[1,2,33,4,55,3,3,6,7,8,55,5,9,9,2]
+k=[]
+for i in l:
+    if i not in k:
+          k.append(i)
+print(k)
 
 # st = "mamamakkskssll"
 # k=""
@@ -813,10 +813,10 @@
 #           k=k+i
 # print(k)
 
-k=5
-m=1
-for i in range(1,5):
-    for j in range(k-i):
-        print(m,end=" ")
-        m=m+1
-    print("\n")
+# k=5
+# m=1
+# for i in range(1,5):
+#     for j in range(k-i):
+#         print(m,end=" ")
+#         m=m+1
+#     print("\n")

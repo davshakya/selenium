@@ -1,5 +1,6 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -9,7 +10,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
 driver.maximize_window()
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 driver.find_element(By.XPATH, "//input[@name='username']").send_keys("Admin")
