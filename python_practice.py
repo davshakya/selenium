@@ -576,7 +576,9 @@
 # def my_function(x):
 #   return list(dict.fromkeys(x))
 # mylist = my_function(["a", "b", "a", "c", "c"])
-# print(mylist)
+# print(mylist)yield
+
+
 
 # x=["a", "b", "a", "c", "c"]
 # y=list(dict.fromkeys(x))
@@ -799,12 +801,12 @@
 
 
 # """"""""""remove duplicate"""
-l=[1,2,33,4,55,3,3,6,7,8,55,5,9,9,2]
-k=[]
-for i in l:
-    if i not in k:
-          k.append(i)
-print(k)
+# l=[1,2,33,4,55,3,3,6,7,8,55,5,9,9,2]
+# k=[]
+# for i in l:
+#     if i not in k:
+#           k.append(i)
+# print(k)
 
 # st = "mamamakkskssll"
 # k=""
@@ -820,3 +822,7 @@ print(k)
 #         print(m,end=" ")
 #         m=m+1
 #     print("\n")
+
+s="devendra"
+# f=k in s
+print(s.find("l"))
