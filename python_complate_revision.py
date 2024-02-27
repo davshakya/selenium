@@ -682,5 +682,8 @@ import math
 # print(dt)
 
 
-x=range(1,10)
-print(type(x))
+# x=range(1,10)
+# print(type(x))
+
+s="devendra"
+print(list(s))

@@ -14,7 +14,7 @@ import validators
 import requests
 from webdriver_manager.chrome import ChromeDriverManager
 
-# driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
+driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
 driver = webdriver.Chrome()
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 # # driver.get("https://the-internet.herokuapp.com/upload")

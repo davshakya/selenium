@@ -12,7 +12,7 @@ import pytest
 @pytest.fixture()
 def test_setup():
     global driver
-    driver=webdriver.Chrome(executable_path="C:\work\chromedriver.exe")
+    driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
     driver.get("https://opensource-demo.orangehrmlive.com/")
     driver.implicitly_wait(10)
     driver.maximize_window()

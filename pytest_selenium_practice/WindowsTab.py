@@ -47,4 +47,4 @@ def Test_HandingW():
     print(driver.title)
     print(driver.current_url)
     time.sleep(2)
-    # driver.quit()
+    driver.quit()

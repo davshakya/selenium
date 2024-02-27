@@ -175,14 +175,14 @@
 # print(rev)
 
 
-# s="devendra singh shakya"
-# rev=""
-# for j in s.split():
-#     k=""
-#     for i in j:
-#         k=i+k
-#     rev=rev+ " " + k  
-# print(rev)
+s="devendra singh shakya"
+rev=""
+for j in s.split():
+    k=""
+    for i in j:
+        k=i+k
+    rev=rev+ " " + k  
+print(rev)
 
 # k=5
 # m=1
@@ -199,3 +199,13 @@ for i in range(1,5):
         print(m,end=" ")
         m=m+1
     print("\n")
+    
+    
+test_dict = {'abc' : [10, 30], 'bcd' : [30, 40, 10]} 
+# Output : {10: ['abc', 'bcd'], 30: ['abc', 'bcd'], 40: ['bcd']}
+outdic={}
+for key, value in test_dict.items():
+    for i in value: 
+        outdic.setdefault(i,[]).append(key)
+print(outdic)
+
